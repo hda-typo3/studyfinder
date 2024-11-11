@@ -1,0 +1,53 @@
+{
+    "name": "hda/hda-academicprogram",
+    "type": "typo3-cms-extension",
+    "description": "HDA - Study Program Finder",
+    "authors": [
+        {
+            "name": "Michael Lang",
+            "role": "Developer"
+        }
+    ],
+   "license": ["GPL-2.0-or-later"],
+   "keywords": [
+    "TYPO3",
+    "extension",
+    "hda",
+    "basic"
+   ],
+   "require": {
+    "typo3/cms-core": "^10.4 || ^11.5"
+   },
+    "require-dev": {
+        "typo3/testing-framework": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hda\\HdaAcademicprogram\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hda\\HdaAcademicprogram\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/hda-academicprogram": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "hda_academicprogram"
+        }
+    }
+}
