@@ -1,0 +1,33 @@
+plugin.tx_studyfinder {
+    view {
+        templateRootPaths.0 	= EXT:tx_studyfinder/Resources/Private/Templates/
+        templateRootPaths.10 	= {$plugin.tx_studyfinder.view.templateRootPath}
+        partialRootPaths.0 		= EXT:tx_studyfinder/Resources/Private/Partials/
+        partialRootPaths.10		= {$plugin.tx_studyfinder.view.partialRootPath}
+        layoutRootPaths.0 		= EXT:tx_studyfinder/Resources/Private/Layouts/
+        layoutRootPaths.10 		= {$plugin.tx_studyfinder.view.layoutRootPath}
+    }
+    persistence {
+        storagePid 				= {$plugin.tx_studyfinder.persistence.storagePid}
+        recursive 				= 1
+    }
+    settings{
+    	location1 				= {$plugin.tx_studyfinder.settings.location1}
+        location2 				= {$plugin.tx_studyfinder.settings.location2}
+        semesterterms 			= {$plugin.tx_studyfinder.settings.semesterterms}
+        nclink 	        		= {$plugin.tx_studyfinder.settings.nclink}
+        nonclink                = {$plugin.tx_studyfinder.settings.nonclink}
+        eignung                 = {$plugin.v.settings.eignung}       
+    }
+    
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}

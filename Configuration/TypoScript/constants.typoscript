@@ -1,0 +1,32 @@
+plugin.tx_studyfinder {
+    view {
+        # cat=plugin.tx_studyfinder/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:studyfinder/Resources/Private/Templates/
+        # cat=plugin.tx_studyfinder/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:studyfinder/Resources/Private/Partials/
+        # cat=plugin.tx_studyfinder/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:studyfinder/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_studyfinder//a; type=string; label=Default storage PID
+        storagePid = 30
+    }
+    settings {
+        # cat=plugin.tx_studyfinder/settings; type=string; label=PID Darmstadt
+    	location1 = 
+        # cat=plugin.tx_studyfinder/settings; type=string; label=PID Dieburg
+    	location2 = 
+        # cat=plugin.tx_studyfinder/settings; type=string; label=Semesterterms
+        semesterterms = 
+        # cat=plugin.tx_studyfinder/settings; type=string; label=NC-link
+        nclink = 
+        # cat=plugin.tx_studyfinder/settings; type=string; label=Eignung
+        eignung =        
+        # cat=plugin.tx_studyfinder/settings; type=string; label=NC-freier Studiengang 
+        nonclink =        
+        # cat=plugin.tx_studyfinder/settings; type=string; label=Eignung 
+        eignung =    
+    }
+    
+    
+}
