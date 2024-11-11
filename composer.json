@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Michael Lang",
-            "role": "Developer"
+            "role": "Developer",
+			"email": "michael.lang@h-da.de",            
         }
     ],
    "license": ["GPL-2.0-or-later"],
@@ -13,16 +14,19 @@
     "extension",
     "hda"
    ],
-   "require": {
-    "typo3/cms-core": "^12.4"
-   },
+	"require": {
+		"php": "~8.3.0",
+		"typo3/cms-core": "^12.4",
+		"typo3/cms-extbase": "^12.4"
+	},
     "autoload": {
         "psr-4": {
-            "Hda\\Studyfinder\\": "Classes"
+            "Hda\\Studyfinder\\": "Classes/"
         }
     },
-    "config": {
-        "vendor-dir": ".Build/vendor",
-        "bin-dir": ".Build/bin"
-    }
+  	"extra": {
+   		 "typo3/cms": {
+     		 "extension-key": "studyfinder"
+    		}
+  	}
 }
