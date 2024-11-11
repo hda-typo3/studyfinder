@@ -11,7 +11,7 @@
    "license": ["GPL-2.0-or-later"],
    "keywords": [
     "extension",
-    "hda",
+    "hda"
    ],
    "require": {
     "typo3/cms-core": "^12.4"
