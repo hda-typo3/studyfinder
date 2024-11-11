@@ -2,27 +2,31 @@
 
 /***************************************************************
  * Extension Manager/Repository config file for ext: "studyfinder"
- *
- *
- * Manual updates:
- * Only the data in the array - anything else is removed by next write.
- * "version" and "dependencies" must not be touched!
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'hda studyfinder',
-    'description' => '',
-    'category' => 'plugin',
-    'author' => 'Michael Lang',
-    'author_email' => 'michael.lang@h-da.de',
-    'state' => 'alpha',
-    'clearCacheOnLoad' => 0,
+    'title' => 'Studyfinder Extension',
+    'description' => 'Extension for the h_da studyprograms',
     'version' => '1.0.0',
+    'category' => 'frontend',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-',
+            'php' => '8.3-',
+            'typo3' => '12.4-',
+            'extbase' => '12.4-',
+            'fluid' => '12.4-',
+            'frontend' => '12.4-',
         ],
-        'conflicts' => [],
-        'suggests' => [],
+    ],
+    'state' => 'stable',
+    'uploadfolder' => false,
+    'createDirs' => '',
+    'author' => 'Michael Lang',
+    'author_email' => 'michael.lang@h-da.de',
+    'author_company' => 'h_da.de',
+    'autoload' => [
+        'psr-4' => [
+            'T3md\\Measure\\' => 'Classes/',
+        ],
     ],
 ];
