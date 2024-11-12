@@ -12,7 +12,7 @@ call_user_func(static function() {
         'Studyfinder',
         'Program',
         [
-            StudyfinderController:class => 'list, show, all, degree, programtype, category'
+            StudyfinderController::class => 'list, show, all, degree, programtype, category'
         ],
         // non-cacheable actions
         [
