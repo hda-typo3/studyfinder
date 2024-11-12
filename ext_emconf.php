@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
             'frontend' => '12.4-',
         ],
     ],
-    'state' => 'stable',
+    'state' => 'alpha',
     'uploadfolder' => false,
     'createDirs' => '',
     'author' => 'Michael Lang',
