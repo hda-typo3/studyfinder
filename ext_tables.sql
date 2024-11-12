@@ -23,7 +23,7 @@ CREATE TABLE tx_studyfinder_domain_model_targetgroup (
 	title varchar(255) NOT NULL DEFAULT ''
 );
 
-CREATE TABLE studyfinder_domain_model_semester (
+CREATE TABLE tx_studyfinder_domain_model_semester (
 	title varchar(255) NOT NULL DEFAULT ''
 );
 
